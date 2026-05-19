@@ -1,0 +1,2516 @@
+[
+  {
+    "id": "gk_ro_001",
+    "text": "Ce culori are steagul României?",
+    "answers": [
+      "Verde, Alb, Roșu",
+      "Roșu, Galben, Albastru",
+      "Albastru, Galben, Roșu",
+      "Albastru, Alb, Roșu"
+    ],
+    "correctIndex": 2,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "gk_ro_002",
+    "text": "Care este capitala Franței?",
+    "answers": [
+      "Lyon",
+      "Marseille",
+      "Paris",
+      "Bordeaux"
+    ],
+    "correctIndex": 2,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "gk_ro_003",
+    "text": "Care este cel mai mare ocean de pe Pământ?",
+    "answers": [
+      "Oceanul Atlantic",
+      "Oceanul Indian",
+      "Oceanul Arctic",
+      "Oceanul Pacific"
+    ],
+    "correctIndex": 3,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "gk_ro_004",
+    "text": "Câte continente are Pământul?",
+    "answers": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 2,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "gk_ro_005",
+    "text": "Cine a pictat Mona Lisa?",
+    "answers": [
+      "Michelangelo",
+      "Raphael",
+      "Leonardo da Vinci",
+      "Botticelli"
+    ],
+    "correctIndex": 2,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "gk_ro_006",
+    "text": "Care este formula chimică a apei?",
+    "answers": [
+      "CO2",
+      "H2O2",
+      "NaCl",
+      "H2O"
+    ],
+    "correctIndex": 3,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "gk_ro_007",
+    "text": "Câte coarde are o chitară clasică?",
+    "answers": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 2,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "gk_ro_008",
+    "text": "Câte planete are Sistemul Solar?",
+    "answers": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correctIndex": 1,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "gk_ro_009",
+    "text": "Care este cel mai dur mineral natural?",
+    "answers": [
+      "Granit",
+      "Cuarț",
+      "Diamant",
+      "Safir"
+    ],
+    "correctIndex": 2,
+    "topic": "general_knowledge",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "gk_ro_010",
+    "text": "Cine a scris Romeo și Julieta?",
+    "answers": [
+      "Charles Dickens",
+      "William Shakespeare",
+      "Victor Hugo",
+      "Dante Alighieri"
+    ],
+    "correctIndex": 1,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "gk_en_001",
+    "text": "What is the capital of Australia?",
+    "answers": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane",
+      "Canberra"
+    ],
+    "correctIndex": 3,
+    "topic": "general_knowledge",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "gk_en_002",
+    "text": "Which is the largest ocean on Earth?",
+    "answers": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean",
+      "Pacific Ocean"
+    ],
+    "correctIndex": 3,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "gk_en_003",
+    "text": "How many continents are there on Earth?",
+    "answers": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 2,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "gk_en_004",
+    "text": "Who painted the Sistine Chapel ceiling?",
+    "answers": [
+      "Leonardo da Vinci",
+      "Raphael",
+      "Michelangelo",
+      "Botticelli"
+    ],
+    "correctIndex": 2,
+    "topic": "general_knowledge",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "gk_en_005",
+    "text": "What is the chemical symbol for gold?",
+    "answers": [
+      "Go",
+      "Gd",
+      "Gl",
+      "Au"
+    ],
+    "correctIndex": 3,
+    "topic": "general_knowledge",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "gk_en_006",
+    "text": "Approximately how many bones are in the adult human body?",
+    "answers": [
+      "156",
+      "176",
+      "206",
+      "226"
+    ],
+    "correctIndex": 2,
+    "topic": "general_knowledge",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "gk_en_007",
+    "text": "Who wrote Romeo and Juliet?",
+    "answers": [
+      "Charles Dickens",
+      "William Shakespeare",
+      "Victor Hugo",
+      "Dante Alighieri"
+    ],
+    "correctIndex": 1,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "gk_en_008",
+    "text": "What is the hardest natural substance?",
+    "answers": [
+      "Granite",
+      "Quartz",
+      "Diamond",
+      "Sapphire"
+    ],
+    "correctIndex": 2,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "gk_en_009",
+    "text": "How many sides does a hexagon have?",
+    "answers": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 2,
+    "topic": "general_knowledge",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "gk_en_010",
+    "text": "What is the approximate speed of light in km/s?",
+    "answers": [
+      "199,792 km/s",
+      "299,792 km/s",
+      "399,792 km/s",
+      "499,792 km/s"
+    ],
+    "correctIndex": 1,
+    "topic": "general_knowledge",
+    "difficulty": "hard",
+    "language": "en"
+  },
+  {
+    "id": "hist_ro_001",
+    "text": "În ce an a avut loc Marea Unire a României?",
+    "answers": [
+      "1916",
+      "1917",
+      "1918",
+      "1920"
+    ],
+    "correctIndex": 2,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "hist_ro_002",
+    "text": "Cine a fost primul Președinte al Statelor Unite ale Americii?",
+    "answers": [
+      "Abraham Lincoln",
+      "Thomas Jefferson",
+      "Benjamin Franklin",
+      "George Washington"
+    ],
+    "correctIndex": 3,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "hist_ro_003",
+    "text": "În ce an a căzut Zidul Berlinului?",
+    "answers": [
+      "1987",
+      "1988",
+      "1989",
+      "1991"
+    ],
+    "correctIndex": 2,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "hist_ro_004",
+    "text": "Revoluția Franceză a început în ce an?",
+    "answers": [
+      "1776",
+      "1783",
+      "1789",
+      "1799"
+    ],
+    "correctIndex": 2,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "hist_ro_005",
+    "text": "Cine a construit Colosseumul din Roma?",
+    "answers": [
+      "Grecii",
+      "Romanii",
+      "Etruścii",
+      "Fenicieni"
+    ],
+    "correctIndex": 1,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "hist_ro_006",
+    "text": "În ce an a izbucnit Primul Război Mondial?",
+    "answers": [
+      "1910",
+      "1912",
+      "1914",
+      "1916"
+    ],
+    "correctIndex": 2,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "hist_ro_007",
+    "text": "Ce civilizație a construit Machu Picchu?",
+    "answers": [
+      "Aztecii",
+      "Mayașii",
+      "Incașii",
+      "Olmecii"
+    ],
+    "correctIndex": 2,
+    "topic": "history",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "hist_ro_008",
+    "text": "Cine a fost ultimul faraon al Egiptului Antic?",
+    "answers": [
+      "Nefertiti",
+      "Cleopatra",
+      "Hatshepsut",
+      "Tutankhamon"
+    ],
+    "correctIndex": 1,
+    "topic": "history",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "hist_ro_009",
+    "text": "Napoleon Bonaparte a murit în exil pe insula?",
+    "answers": [
+      "Corsica",
+      "Malta",
+      "Elba",
+      "Sfânta Elena"
+    ],
+    "correctIndex": 3,
+    "topic": "history",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "hist_ro_010",
+    "text": "Cel mai lung conflict din istoria medievală europeană este Războiul de O Sută de Ani, care a durat de fapt câți ani?",
+    "answers": [
+      "100",
+      "112",
+      "116",
+      "98"
+    ],
+    "correctIndex": 2,
+    "topic": "history",
+    "difficulty": "hard",
+    "language": "ro"
+  },
+  {
+    "id": "hist_en_001",
+    "text": "When did World War II end?",
+    "answers": [
+      "1943",
+      "1944",
+      "1945",
+      "1946"
+    ],
+    "correctIndex": 2,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "hist_en_002",
+    "text": "Who was the first man to walk on the Moon?",
+    "answers": [
+      "Buzz Aldrin",
+      "Yuri Gagarin",
+      "Neil Armstrong",
+      "Michael Collins"
+    ],
+    "correctIndex": 2,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "hist_en_003",
+    "text": "In what year was the Magna Carta signed?",
+    "answers": [
+      "1066",
+      "1215",
+      "1348",
+      "1453"
+    ],
+    "correctIndex": 1,
+    "topic": "history",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "hist_en_004",
+    "text": "Who was the first female Prime Minister of the United Kingdom?",
+    "answers": [
+      "Theresa May",
+      "Margaret Thatcher",
+      "Indira Gandhi",
+      "Angela Merkel"
+    ],
+    "correctIndex": 1,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "hist_en_005",
+    "text": "When did the Berlin Wall fall?",
+    "answers": [
+      "1987",
+      "1988",
+      "1989",
+      "1991"
+    ],
+    "correctIndex": 2,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "hist_en_006",
+    "text": "Who is credited with inventing the telephone?",
+    "answers": [
+      "Thomas Edison",
+      "Nikola Tesla",
+      "Alexander Graham Bell",
+      "Guglielmo Marconi"
+    ],
+    "correctIndex": 2,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "hist_en_007",
+    "text": "When did the French Revolution begin?",
+    "answers": [
+      "1776",
+      "1783",
+      "1789",
+      "1799"
+    ],
+    "correctIndex": 2,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "hist_en_008",
+    "text": "What was the name of the ship that sank in 1912 after hitting an iceberg?",
+    "answers": [
+      "Olympic",
+      "Britannic",
+      "Lusitania",
+      "Titanic"
+    ],
+    "correctIndex": 3,
+    "topic": "history",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "hist_en_009",
+    "text": "Who co-authored the Communist Manifesto with Friedrich Engels?",
+    "answers": [
+      "Vladimir Lenin",
+      "Leon Trotsky",
+      "Karl Marx",
+      "Joseph Stalin"
+    ],
+    "correctIndex": 2,
+    "topic": "history",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "hist_en_010",
+    "text": "Which empire did Alexander the Great rule?",
+    "answers": [
+      "Roman Empire",
+      "Persian Empire",
+      "Ottoman Empire",
+      "Macedonian Empire"
+    ],
+    "correctIndex": 3,
+    "topic": "history",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "geo_ro_001",
+    "text": "Care este cel mai lung râu din lume?",
+    "answers": [
+      "Amazon",
+      "Nil",
+      "Yangtze",
+      "Mississippi"
+    ],
+    "correctIndex": 1,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "geo_ro_002",
+    "text": "Care este capitala Australiei?",
+    "answers": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane",
+      "Canberra"
+    ],
+    "correctIndex": 3,
+    "topic": "geography",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "geo_ro_003",
+    "text": "Care este cel mai înalt munte din lume?",
+    "answers": [
+      "K2",
+      "Kangchenjunga",
+      "Everest",
+      "Lhotse"
+    ],
+    "correctIndex": 2,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "geo_ro_004",
+    "text": "Care este cel mai mare deșert cald din lume?",
+    "answers": [
+      "Gobi",
+      "Kalahari",
+      "Sahara",
+      "Arabian"
+    ],
+    "correctIndex": 2,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "geo_ro_005",
+    "text": "Care este capitala Japoniei?",
+    "answers": [
+      "Osaka",
+      "Kyoto",
+      "Hiroshima",
+      "Tokyo"
+    ],
+    "correctIndex": 3,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "geo_ro_006",
+    "text": "Pe ce continent se află Egipt?",
+    "answers": [
+      "Asia",
+      "Europa",
+      "Africa",
+      "America de Nord"
+    ],
+    "correctIndex": 2,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "geo_ro_007",
+    "text": "Care este cel mai adânc lac din lume?",
+    "answers": [
+      "Lacul Superior",
+      "Lacul Victoria",
+      "Lacul Titicaca",
+      "Lacul Baikal"
+    ],
+    "correctIndex": 3,
+    "topic": "geography",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "geo_ro_008",
+    "text": "Care este capitala Braziliei?",
+    "answers": [
+      "São Paulo",
+      "Rio de Janeiro",
+      "Salvador",
+      "Brasília"
+    ],
+    "correctIndex": 3,
+    "topic": "geography",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "geo_ro_009",
+    "text": "Care este cel mai mic stat din lume ca suprafață?",
+    "answers": [
+      "Monaco",
+      "San Marino",
+      "Vatican",
+      "Liechtenstein"
+    ],
+    "correctIndex": 2,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "geo_ro_010",
+    "text": "Pe ce continent se află Munții Anzi?",
+    "answers": [
+      "America de Nord",
+      "America de Sud",
+      "Africa",
+      "Asia"
+    ],
+    "correctIndex": 1,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "geo_en_001",
+    "text": "What is the capital of Canada?",
+    "answers": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Ottawa"
+    ],
+    "correctIndex": 3,
+    "topic": "geography",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "geo_en_002",
+    "text": "What is the longest river in the world?",
+    "answers": [
+      "Amazon",
+      "Nile",
+      "Yangtze",
+      "Mississippi"
+    ],
+    "correctIndex": 1,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "geo_en_003",
+    "text": "Which is the largest country in the world by area?",
+    "answers": [
+      "China",
+      "USA",
+      "Canada",
+      "Russia"
+    ],
+    "correctIndex": 3,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "geo_en_004",
+    "text": "What is the capital of Japan?",
+    "answers": [
+      "Osaka",
+      "Kyoto",
+      "Hiroshima",
+      "Tokyo"
+    ],
+    "correctIndex": 3,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "geo_en_005",
+    "text": "Which continent is Egypt on?",
+    "answers": [
+      "Asia",
+      "Europe",
+      "Africa",
+      "North America"
+    ],
+    "correctIndex": 2,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "geo_en_006",
+    "text": "Which is the deepest lake in the world?",
+    "answers": [
+      "Lake Superior",
+      "Lake Victoria",
+      "Lake Titicaca",
+      "Lake Baikal"
+    ],
+    "correctIndex": 3,
+    "topic": "geography",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "geo_en_007",
+    "text": "What is the capital of Brazil?",
+    "answers": [
+      "São Paulo",
+      "Rio de Janeiro",
+      "Salvador",
+      "Brasília"
+    ],
+    "correctIndex": 3,
+    "topic": "geography",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "geo_en_008",
+    "text": "What is the smallest country in the world by area?",
+    "answers": [
+      "Monaco",
+      "San Marino",
+      "Vatican City",
+      "Liechtenstein"
+    ],
+    "correctIndex": 2,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "geo_en_009",
+    "text": "On which continent are the Andes mountains located?",
+    "answers": [
+      "North America",
+      "South America",
+      "Africa",
+      "Asia"
+    ],
+    "correctIndex": 1,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "geo_en_010",
+    "text": "Which ocean is the largest?",
+    "answers": [
+      "Atlantic",
+      "Indian",
+      "Arctic",
+      "Pacific"
+    ],
+    "correctIndex": 3,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "game_ro_001",
+    "text": "Cine este protagonistul din seria The Legend of Zelda?",
+    "answers": [
+      "Zelda",
+      "Ganon",
+      "Link",
+      "Impa"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "game_ro_002",
+    "text": "În ce joc apare personajul Master Chief?",
+    "answers": [
+      "Gears of War",
+      "Halo",
+      "Call of Duty",
+      "Destiny"
+    ],
+    "correctIndex": 1,
+    "topic": "gaming",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "game_ro_003",
+    "text": "Ce companie a creat jocul Minecraft?",
+    "answers": [
+      "EA Games",
+      "Ubisoft",
+      "Mojang",
+      "Valve"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "game_ro_004",
+    "text": "În ce joc apare personajul Lara Croft?",
+    "answers": [
+      "Uncharted",
+      "Tomb Raider",
+      "Prince of Persia",
+      "Assassin's Creed"
+    ],
+    "correctIndex": 1,
+    "topic": "gaming",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "game_ro_005",
+    "text": "Ce joc are motto-ul \"War. War never changes.\"?",
+    "answers": [
+      "Battlefield",
+      "Halo",
+      "Fallout",
+      "Doom"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "game_ro_006",
+    "text": "Ce culoare este personajul Pac-Man?",
+    "answers": [
+      "Roșu",
+      "Alb",
+      "Galben",
+      "Verde"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "game_ro_007",
+    "text": "Care a fost primul battle royale major care a popularizat genul?",
+    "answers": [
+      "Fortnite",
+      "PUBG",
+      "Apex Legends",
+      "H1Z1"
+    ],
+    "correctIndex": 1,
+    "topic": "gaming",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "game_ro_008",
+    "text": "Ce joc are personajul Cloud Strife?",
+    "answers": [
+      "Final Fantasy VI",
+      "Final Fantasy VII",
+      "Kingdom Hearts",
+      "Crisis Core"
+    ],
+    "correctIndex": 1,
+    "topic": "gaming",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "game_ro_009",
+    "text": "În ce joc joci ca Commander Shepard?",
+    "answers": [
+      "Star Wars Jedi: Fallen Order",
+      "Destiny",
+      "Mass Effect",
+      "Anthem"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "game_ro_010",
+    "text": "În ce an a fost lansat primul joc Pokémon?",
+    "answers": [
+      "1994",
+      "1995",
+      "1996",
+      "1997"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "game_en_001",
+    "text": "Who is the protagonist of The Legend of Zelda series?",
+    "answers": [
+      "Zelda",
+      "Ganon",
+      "Link",
+      "Impa"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "game_en_002",
+    "text": "What company made Minecraft?",
+    "answers": [
+      "EA Games",
+      "Ubisoft",
+      "Mojang",
+      "Valve"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "game_en_003",
+    "text": "In which game does Master Chief appear?",
+    "answers": [
+      "Gears of War",
+      "Halo",
+      "Call of Duty",
+      "Destiny"
+    ],
+    "correctIndex": 1,
+    "topic": "gaming",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "game_en_004",
+    "text": "What is the best-selling video game of all time?",
+    "answers": [
+      "Tetris",
+      "GTA V",
+      "Minecraft",
+      "Wii Sports"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "game_en_005",
+    "text": "Which game features Lara Croft as the protagonist?",
+    "answers": [
+      "Uncharted",
+      "Tomb Raider",
+      "Prince of Persia",
+      "Assassin's Creed"
+    ],
+    "correctIndex": 1,
+    "topic": "gaming",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "game_en_006",
+    "text": "What color is Pac-Man?",
+    "answers": [
+      "Red",
+      "White",
+      "Yellow",
+      "Green"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "game_en_007",
+    "text": "In which game do you play as Commander Shepard?",
+    "answers": [
+      "Star Wars Jedi: Fallen Order",
+      "Destiny",
+      "Mass Effect",
+      "Anthem"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "game_en_008",
+    "text": "What does \"NPC\" stand for in gaming?",
+    "answers": [
+      "New Player Character",
+      "Non-Playable Content",
+      "Non-Player Character",
+      "Net Player Control"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "game_en_009",
+    "text": "Which game franchise features a character named Solid Snake?",
+    "answers": [
+      "Splinter Cell",
+      "Metal Gear",
+      "Hitman",
+      "Deus Ex"
+    ],
+    "correctIndex": 1,
+    "topic": "gaming",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "game_en_010",
+    "text": "What year was the first Pokémon game released?",
+    "answers": [
+      "1994",
+      "1995",
+      "1996",
+      "1997"
+    ],
+    "correctIndex": 2,
+    "topic": "gaming",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "music_ro_001",
+    "text": "Cine a compus Simfonia nr. 9 în re minor?",
+    "answers": [
+      "Mozart",
+      "Bach",
+      "Beethoven",
+      "Chopin"
+    ],
+    "correctIndex": 2,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "music_ro_002",
+    "text": "Din ce oraș era trupa The Beatles?",
+    "answers": [
+      "Londra",
+      "Manchester",
+      "Liverpool",
+      "Birmingham"
+    ],
+    "correctIndex": 2,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "music_ro_003",
+    "text": "Cine este supranumit \"Regina Popului\"?",
+    "answers": [
+      "Britney Spears",
+      "Lady Gaga",
+      "Madonna",
+      "Mariah Carey"
+    ],
+    "correctIndex": 2,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "music_ro_004",
+    "text": "Ce instrument cântă Yo-Yo Ma?",
+    "answers": [
+      "Vioară",
+      "Violoncel",
+      "Contrabas",
+      "Viola"
+    ],
+    "correctIndex": 1,
+    "topic": "music",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "music_ro_005",
+    "text": "Cine a compus baletul Lacul Lebedelor?",
+    "answers": [
+      "Brahms",
+      "Dvorak",
+      "Vivaldi",
+      "Ceaikovski"
+    ],
+    "correctIndex": 3,
+    "topic": "music",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "music_ro_006",
+    "text": "Ce artist are albumul emblematic \"Thriller\"?",
+    "answers": [
+      "Prince",
+      "Michael Jackson",
+      "Whitney Houston",
+      "Stevie Wonder"
+    ],
+    "correctIndex": 1,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "music_ro_007",
+    "text": "Câte clape are un pian standard?",
+    "answers": [
+      "72",
+      "76",
+      "84",
+      "88"
+    ],
+    "correctIndex": 3,
+    "topic": "music",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "music_ro_008",
+    "text": "Care este cel mai bine vândut album din toate timpurile?",
+    "answers": [
+      "Back in Black — AC/DC",
+      "The Dark Side of the Moon — Pink Floyd",
+      "Thriller — Michael Jackson",
+      "Hotel California — Eagles"
+    ],
+    "correctIndex": 2,
+    "topic": "music",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "music_ro_009",
+    "text": "Trupa Metallica face parte din ce gen muzical?",
+    "answers": [
+      "Punk Rock",
+      "Heavy Metal",
+      "Grunge",
+      "Alternative Rock"
+    ],
+    "correctIndex": 1,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "music_ro_010",
+    "text": "Cine a cântat piesa \"Bohemian Rhapsody\"?",
+    "answers": [
+      "Led Zeppelin",
+      "Deep Purple",
+      "Queen",
+      "Aerosmith"
+    ],
+    "correctIndex": 2,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "music_en_001",
+    "text": "Who composed the 9th Symphony in D minor?",
+    "answers": [
+      "Mozart",
+      "Bach",
+      "Beethoven",
+      "Chopin"
+    ],
+    "correctIndex": 2,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "music_en_002",
+    "text": "What city were The Beatles from?",
+    "answers": [
+      "London",
+      "Manchester",
+      "Liverpool",
+      "Birmingham"
+    ],
+    "correctIndex": 2,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "music_en_003",
+    "text": "Who is known as the \"Queen of Pop\"?",
+    "answers": [
+      "Britney Spears",
+      "Lady Gaga",
+      "Madonna",
+      "Mariah Carey"
+    ],
+    "correctIndex": 2,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "music_en_004",
+    "text": "What instrument does Yo-Yo Ma play?",
+    "answers": [
+      "Violin",
+      "Cello",
+      "Double Bass",
+      "Viola"
+    ],
+    "correctIndex": 1,
+    "topic": "music",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "music_en_005",
+    "text": "Which artist released the iconic album \"Thriller\"?",
+    "answers": [
+      "Prince",
+      "Michael Jackson",
+      "Whitney Houston",
+      "Stevie Wonder"
+    ],
+    "correctIndex": 1,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "music_en_006",
+    "text": "How many keys does a standard piano have?",
+    "answers": [
+      "72",
+      "76",
+      "84",
+      "88"
+    ],
+    "correctIndex": 3,
+    "topic": "music",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "music_en_007",
+    "text": "Who sang \"Bohemian Rhapsody\"?",
+    "answers": [
+      "Led Zeppelin",
+      "Deep Purple",
+      "Queen",
+      "Aerosmith"
+    ],
+    "correctIndex": 2,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "music_en_008",
+    "text": "What genre is Metallica?",
+    "answers": [
+      "Punk Rock",
+      "Heavy Metal",
+      "Grunge",
+      "Alternative Rock"
+    ],
+    "correctIndex": 1,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "music_en_009",
+    "text": "Which artist had the most Grammy wins as of 2023?",
+    "answers": [
+      "Taylor Swift",
+      "Adele",
+      "Beyoncé",
+      "Jay-Z"
+    ],
+    "correctIndex": 2,
+    "topic": "music",
+    "difficulty": "hard",
+    "language": "en"
+  },
+  {
+    "id": "music_en_010",
+    "text": "What band did Freddie Mercury front?",
+    "answers": [
+      "Led Zeppelin",
+      "Deep Purple",
+      "Queen",
+      "Aerosmith"
+    ],
+    "correctIndex": 2,
+    "topic": "music",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tech_ro_001",
+    "text": "Cine a fondat compania Apple?",
+    "answers": [
+      "Bill Gates și Paul Allen",
+      "Steve Jobs și Steve Wozniak",
+      "Larry Page și Sergey Brin",
+      "Mark Zuckerberg"
+    ],
+    "correctIndex": 1,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tech_ro_002",
+    "text": "Ce înseamnă acronimul \"WWW\"?",
+    "answers": [
+      "World Wide Web",
+      "Wireless World Web",
+      "Wide Web World",
+      "Web Wide World"
+    ],
+    "correctIndex": 0,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tech_ro_003",
+    "text": "Ce limbaj de programare a creat Guido van Rossum?",
+    "answers": [
+      "Ruby",
+      "Perl",
+      "Python",
+      "Java"
+    ],
+    "correctIndex": 2,
+    "topic": "technology",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "tech_ro_004",
+    "text": "Ce înseamnă acronimul \"HTML\"?",
+    "answers": [
+      "HyperText Markup Language",
+      "High Text Markup Language",
+      "HyperTransfer Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "correctIndex": 0,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tech_ro_005",
+    "text": "Cine a fondat Microsoft?",
+    "answers": [
+      "Steve Jobs și Steve Wozniak",
+      "Larry Page și Sergey Brin",
+      "Bill Gates și Paul Allen",
+      "Jack Dorsey și Evan Williams"
+    ],
+    "correctIndex": 2,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tech_ro_006",
+    "text": "Care este sistemul de operare al iPhone-ului?",
+    "answers": [
+      "Android",
+      "Windows Mobile",
+      "iOS",
+      "HarmonyOS"
+    ],
+    "correctIndex": 2,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tech_ro_007",
+    "text": "Ce companie a dezvoltat sistemul de operare Android?",
+    "answers": [
+      "Apple",
+      "Microsoft",
+      "Samsung",
+      "Google"
+    ],
+    "correctIndex": 3,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tech_ro_008",
+    "text": "Câți biți are un byte?",
+    "answers": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "correctIndex": 1,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tech_ro_009",
+    "text": "Ce înseamnă acronimul \"CPU\"?",
+    "answers": [
+      "Central Power Unit",
+      "Core Processing Unit",
+      "Central Processing Unit",
+      "Computer Power Unit"
+    ],
+    "correctIndex": 2,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tech_ro_010",
+    "text": "În ce an a fost lansat primul iPhone?",
+    "answers": [
+      "2005",
+      "2006",
+      "2007",
+      "2008"
+    ],
+    "correctIndex": 2,
+    "topic": "technology",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "tech_en_001",
+    "text": "Who founded Apple?",
+    "answers": [
+      "Bill Gates and Paul Allen",
+      "Steve Jobs and Steve Wozniak",
+      "Larry Page and Sergey Brin",
+      "Mark Zuckerberg"
+    ],
+    "correctIndex": 1,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tech_en_002",
+    "text": "What does \"WWW\" stand for?",
+    "answers": [
+      "World Wide Web",
+      "Wireless World Web",
+      "Wide Web World",
+      "Web Wide World"
+    ],
+    "correctIndex": 0,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tech_en_003",
+    "text": "Who created the Python programming language?",
+    "answers": [
+      "James Gosling",
+      "Bjarne Stroustrup",
+      "Guido van Rossum",
+      "Brendan Eich"
+    ],
+    "correctIndex": 2,
+    "topic": "technology",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "tech_en_004",
+    "text": "What does HTML stand for?",
+    "answers": [
+      "HyperText Markup Language",
+      "High Text Markup Language",
+      "HyperTransfer Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "correctIndex": 0,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tech_en_005",
+    "text": "Who founded Microsoft?",
+    "answers": [
+      "Steve Jobs and Steve Wozniak",
+      "Larry Page and Sergey Brin",
+      "Bill Gates and Paul Allen",
+      "Jack Dorsey and Evan Williams"
+    ],
+    "correctIndex": 2,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tech_en_006",
+    "text": "What operating system does the iPhone use?",
+    "answers": [
+      "Android",
+      "Windows Mobile",
+      "iOS",
+      "HarmonyOS"
+    ],
+    "correctIndex": 2,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tech_en_007",
+    "text": "How many bits are in a byte?",
+    "answers": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "correctIndex": 1,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tech_en_008",
+    "text": "What does CPU stand for?",
+    "answers": [
+      "Central Power Unit",
+      "Core Processing Unit",
+      "Central Processing Unit",
+      "Computer Power Unit"
+    ],
+    "correctIndex": 2,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tech_en_009",
+    "text": "Which company developed Android?",
+    "answers": [
+      "Apple",
+      "Microsoft",
+      "Samsung",
+      "Google"
+    ],
+    "correctIndex": 3,
+    "topic": "technology",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tech_en_010",
+    "text": "What year was the first iPhone released?",
+    "answers": [
+      "2005",
+      "2006",
+      "2007",
+      "2008"
+    ],
+    "correctIndex": 2,
+    "topic": "technology",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "tv_ro_001",
+    "text": "Cine ucide pe regele Joffrey Baratheon în Game of Thrones?",
+    "answers": [
+      "Tyrion Lannister",
+      "Cersei Lannister",
+      "Olenna Tyrell",
+      "Petyr Baelish"
+    ],
+    "correctIndex": 2,
+    "topic": "tv_series",
+    "difficulty": "hard",
+    "language": "ro"
+  },
+  {
+    "id": "tv_ro_002",
+    "text": "Câte sezoane are Breaking Bad?",
+    "answers": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tv_ro_003",
+    "text": "Cine joacă rolul lui Walter White în Breaking Bad?",
+    "answers": [
+      "Aaron Paul",
+      "Bryan Cranston",
+      "Bob Odenkirk",
+      "Dean Norris"
+    ],
+    "correctIndex": 1,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tv_ro_004",
+    "text": "În ce oraș se petrece acțiunea din serialul Friends?",
+    "answers": [
+      "Los Angeles",
+      "Chicago",
+      "New York",
+      "Boston"
+    ],
+    "correctIndex": 2,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tv_ro_005",
+    "text": "Cum se numește cafeneaua frecventată de personajele din Friends?",
+    "answers": [
+      "The Brew",
+      "Central Perk",
+      "Java Junction",
+      "Café Nervosa"
+    ],
+    "correctIndex": 1,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tv_ro_006",
+    "text": "Câte sezoane are Game of Thrones?",
+    "answers": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tv_ro_007",
+    "text": "În ce an se petrece acțiunea din Stranger Things, sezonul 1?",
+    "answers": [
+      "1980",
+      "1981",
+      "1983",
+      "1985"
+    ],
+    "correctIndex": 2,
+    "topic": "tv_series",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "tv_ro_008",
+    "text": "Care este prenumele real al lui Heisenberg în Breaking Bad?",
+    "answers": [
+      "Jesse",
+      "Hank",
+      "Walter",
+      "Saul"
+    ],
+    "correctIndex": 2,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tv_ro_009",
+    "text": "Cum se numea compania din serialul The Office (versiunea americană)?",
+    "answers": [
+      "Initech",
+      "Dunder Mifflin",
+      "Wernham Hogg",
+      "Vandelay Industries"
+    ],
+    "correctIndex": 1,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tv_ro_010",
+    "text": "Cine este tatăl adevărat al lui Jon Snow în Game of Thrones?",
+    "answers": [
+      "Ned Stark",
+      "Robert Baratheon",
+      "Rhaegar Targaryen",
+      "Stannis Baratheon"
+    ],
+    "correctIndex": 2,
+    "topic": "tv_series",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "tv_en_001",
+    "text": "How many seasons does Breaking Bad have?",
+    "answers": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tv_en_002",
+    "text": "Who plays Walter White in Breaking Bad?",
+    "answers": [
+      "Aaron Paul",
+      "Bryan Cranston",
+      "Bob Odenkirk",
+      "Dean Norris"
+    ],
+    "correctIndex": 1,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tv_en_003",
+    "text": "What city is Friends set in?",
+    "answers": [
+      "Los Angeles",
+      "Chicago",
+      "New York City",
+      "Boston"
+    ],
+    "correctIndex": 2,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tv_en_004",
+    "text": "What is the name of the coffee shop in Friends?",
+    "answers": [
+      "The Brew",
+      "Central Perk",
+      "Java Junction",
+      "Café Nervosa"
+    ],
+    "correctIndex": 1,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tv_en_005",
+    "text": "How many seasons does Game of Thrones have?",
+    "answers": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tv_en_006",
+    "text": "In Stranger Things season 1, what year is the setting?",
+    "answers": [
+      "1980",
+      "1981",
+      "1983",
+      "1985"
+    ],
+    "correctIndex": 2,
+    "topic": "tv_series",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "tv_en_007",
+    "text": "What is Heisenberg's real name in Breaking Bad?",
+    "answers": [
+      "Jesse Pinkman",
+      "Hank Schrader",
+      "Walter White",
+      "Saul Goodman"
+    ],
+    "correctIndex": 2,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tv_en_008",
+    "text": "What is the name of the company in The Office (US version)?",
+    "answers": [
+      "Initech",
+      "Dunder Mifflin",
+      "Wernham Hogg",
+      "Vandelay Industries"
+    ],
+    "correctIndex": 1,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tv_en_009",
+    "text": "Who is Jon Snow's real father in Game of Thrones?",
+    "answers": [
+      "Ned Stark",
+      "Robert Baratheon",
+      "Rhaegar Targaryen",
+      "Stannis Baratheon"
+    ],
+    "correctIndex": 2,
+    "topic": "tv_series",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "tv_en_010",
+    "text": "In which country is The Office (US version) set?",
+    "answers": [
+      "United Kingdom",
+      "Canada",
+      "Australia",
+      "United States"
+    ],
+    "correctIndex": 3,
+    "topic": "tv_series",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "text": "Care este capitala Romaniei?",
+    "answers": [
+      "Timisoara",
+      "Brasov",
+      "Bucuresti",
+      "Cluj"
+    ],
+    "correctIndex": 2,
+    "topic": "geography",
+    "difficulty": "easy",
+    "language": "ro",
+    "id": "geo_ro_011"
+  },
+  {
+    "id": "fb_en_001",
+    "text": "Which club has won the most UEFA Champions League titles?",
+    "answers": ["Real Madrid", "FC Barcelona", "Bayern Munich", "Liverpool"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "fb_en_002",
+    "text": "How many players does each team have on the football field?",
+    "answers": ["11", "10", "12", "9"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "fb_en_003",
+    "text": "Which country has won the most FIFA World Cups?",
+    "answers": ["Brazil", "Germany", "Argentina", "Italy"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "fb_en_004",
+    "text": "Who scored the 'Hand of God' goal at the 1986 World Cup?",
+    "answers": ["Diego Maradona", "Pelé", "Ronaldo", "Zidane"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "fb_en_005",
+    "text": "In which country was the 2022 FIFA World Cup held?",
+    "answers": ["Qatar", "Russia", "Brazil", "South Africa"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "fb_en_006",
+    "text": "Who is the all-time top scorer in FIFA World Cup history?",
+    "answers": ["Miroslav Klose", "Ronaldo", "Pelé", "Gerd Müller"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "fb_en_007",
+    "text": "Which player has won the most Ballon d'Or awards?",
+    "answers": ["Lionel Messi", "Cristiano Ronaldo", "Ronaldinho", "Michel Platini"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "fb_en_008",
+    "text": "Which club did Lionel Messi join after leaving FC Barcelona in 2021?",
+    "answers": ["Paris Saint-Germain", "Manchester City", "Bayern Munich", "Juventus"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "fb_en_009",
+    "text": "How many substitutions are allowed per team in a standard FIFA match?",
+    "answers": ["5", "3", "4", "6"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "fb_en_010",
+    "text": "Who holds the record for most goals scored in a single FIFA World Cup with 13 goals in 1958?",
+    "answers": ["Just Fontaine", "Gerd Müller", "Miroslav Klose", "Sándor Kocsis"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "hard",
+    "language": "en"
+  },
+  {
+    "id": "fb_ro_001",
+    "text": "Care echipă a câștigat cele mai multe trofee UEFA Champions League?",
+    "answers": ["Real Madrid", "FC Barcelona", "Bayern Munchen", "Liverpool"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "fb_ro_002",
+    "text": "Care țară a câștigat de 5 ori Campionatul Mondial FIFA?",
+    "answers": ["Brazilia", "Germania", "Argentina", "Italia"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "fb_ro_003",
+    "text": "Cine a marcat golul 'Mâna lui Dumnezeu' la Cupa Mondială din 1986?",
+    "answers": ["Diego Maradona", "Pelé", "Ronaldo", "Zidane"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "fb_ro_004",
+    "text": "Cine a câștigat cel mai mare număr de trofee Balon de Aur?",
+    "answers": ["Lionel Messi", "Cristiano Ronaldo", "Ronaldinho", "Zinedine Zidane"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "fb_ro_005",
+    "text": "Care națională a câștigat Cupa Mondială FIFA 2022?",
+    "answers": ["Argentina", "Franța", "Brazilia", "Maroc"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "fb_ro_006",
+    "text": "În ce an a obținut România locul 4 la Campionatul Mondial FIFA?",
+    "answers": ["1994", "1990", "1998", "1986"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "fb_ro_007",
+    "text": "Câte goluri a marcat Miroslav Klose la toate Campionatele Mondiale la care a participat?",
+    "answers": ["16", "14", "13", "18"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "fb_ro_008",
+    "text": "Care echipă a câștigat primul Campionat Mondial FIFA din 1930?",
+    "answers": ["Uruguay", "Argentina", "Brazilia", "Italia"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "fb_ro_009",
+    "text": "Cu ce echipă de club a câștigat Cristiano Ronaldo primul titlu de Champions League?",
+    "answers": ["Manchester United", "Real Madrid", "Juventus", "Sporting Lisabona"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "fb_ro_010",
+    "text": "Cine deține recordul de goluri înscrise la un singur Campionat Mondial cu 13 goluri în 1958?",
+    "answers": ["Just Fontaine", "Gerd Müller", "Miroslav Klose", "Sándor Kocsis"],
+    "correctIndex": 0,
+    "topic": "football",
+    "difficulty": "hard",
+    "language": "ro"
+  },
+  {
+    "id": "tn_en_001",
+    "text": "How many Grand Slam tournaments are held each year?",
+    "answers": ["4", "3", "5", "2"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tn_en_002",
+    "text": "Which Grand Slam tournament is played on grass courts?",
+    "answers": ["Wimbledon", "Roland Garros", "Australian Open", "US Open"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tn_en_003",
+    "text": "What must players primarily wear at Wimbledon?",
+    "answers": ["White clothing", "Any color", "Dark colors", "National team colors"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tn_en_004",
+    "text": "Which city hosts the Australian Open?",
+    "answers": ["Melbourne", "Sydney", "Brisbane", "Perth"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tn_en_005",
+    "text": "What does the term 'ace' mean in tennis?",
+    "answers": ["A serve the opponent fails to touch", "Winning a set 6-0", "A perfect match", "A double fault"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "tn_en_006",
+    "text": "Who holds the record for most men's Grand Slam singles titles?",
+    "answers": ["Novak Djokovic", "Rafael Nadal", "Roger Federer", "Pete Sampras"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "tn_en_007",
+    "text": "Which player won 14 French Open titles?",
+    "answers": ["Rafael Nadal", "Roger Federer", "Björn Borg", "Novak Djokovic"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "tn_en_008",
+    "text": "Which Romanian player won Roland Garros 2018 and Wimbledon 2019?",
+    "answers": ["Simona Halep", "Irina Begu", "Monica Niculescu", "Patricia Țig"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "tn_en_009",
+    "text": "Who achieved the 'Golden Slam' in 1988, winning all 4 Grand Slams and Olympic gold in one year?",
+    "answers": ["Steffi Graf", "Martina Navratilova", "Monica Seles", "Chris Evert"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "hard",
+    "language": "en"
+  },
+  {
+    "id": "tn_en_010",
+    "text": "Who was the first player to complete the calendar Grand Slam in the Open Era (1969)?",
+    "answers": ["Rod Laver", "Arthur Ashe", "John Newcombe", "Ken Rosewall"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "hard",
+    "language": "en"
+  },
+  {
+    "id": "tn_ro_001",
+    "text": "Câte turnee Grand Slam se joacă anual?",
+    "answers": ["4", "3", "5", "2"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tn_ro_002",
+    "text": "Cum se numește turneul Grand Slam jucat pe iarbă?",
+    "answers": ["Wimbledon", "Roland Garros", "Australian Open", "US Open"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tn_ro_003",
+    "text": "Ce culoare trebuie să poarte jucătorii la turneul de la Wimbledon?",
+    "answers": ["Alb", "Orice culoare", "Culorile naționale", "Negru"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tn_ro_004",
+    "text": "Ce țară organizează turneul Roland Garros?",
+    "answers": ["Franța", "Anglia", "Australia", "SUA"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tn_ro_005",
+    "text": "Ce înseamnă termenul 'ace' în tenis?",
+    "answers": ["Minge de serviciu neatingută de adversar", "Set câștigat cu 6-0", "Meci perfect", "Dublă greșeală"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "tn_ro_006",
+    "text": "Cine deține recordul de titluri Grand Slam în tenisul masculin?",
+    "answers": ["Novak Djokovic", "Rafael Nadal", "Roger Federer", "Pete Sampras"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "tn_ro_007",
+    "text": "Cine a câștigat de 14 ori turneul Roland Garros?",
+    "answers": ["Rafael Nadal", "Roger Federer", "Björn Borg", "Novak Djokovic"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "tn_ro_008",
+    "text": "Care româncă a câștigat Roland Garros 2018 și Wimbledon 2019?",
+    "answers": ["Simona Halep", "Irina Begu", "Monica Niculescu", "Patricia Țig"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "tn_ro_009",
+    "text": "Cine a realizat 'Golden Slam'-ul în 1988, câștigând toate 4 Grand Slam-uri și medalia de aur olimpică?",
+    "answers": ["Steffi Graf", "Martina Navratilova", "Monica Seles", "Chris Evert"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "hard",
+    "language": "ro"
+  },
+  {
+    "id": "tn_ro_010",
+    "text": "Cine a fost primul jucător care a câștigat toate cele 4 Grand Slam-uri în același an calendaristic în Era Open (1969)?",
+    "answers": ["Rod Laver", "Arthur Ashe", "John Newcombe", "Björn Borg"],
+    "correctIndex": 0,
+    "topic": "tennis",
+    "difficulty": "hard",
+    "language": "ro"
+  },
+  {
+    "id": "bk_en_001",
+    "text": "How many players from each team are on the court at a time in basketball?",
+    "answers": ["5", "6", "4", "7"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "bk_en_002",
+    "text": "Who was known by the nickname 'Black Mamba' in the NBA?",
+    "answers": ["Kobe Bryant", "LeBron James", "Michael Jordan", "Shaquille O'Neal"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "bk_en_003",
+    "text": "Who invented basketball?",
+    "answers": ["James Naismith", "Michael Jordan", "Larry Bird", "Bill Russell"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "bk_en_004",
+    "text": "What is the shot clock limit in the NBA?",
+    "answers": ["24 seconds", "30 seconds", "20 seconds", "35 seconds"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "easy",
+    "language": "en"
+  },
+  {
+    "id": "bk_en_005",
+    "text": "How high is a standard basketball hoop from the floor?",
+    "answers": ["3.05 meters (10 feet)", "2.75 meters (9 feet)", "3.50 meters (11.5 feet)", "3.20 meters (10.5 feet)"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "bk_en_006",
+    "text": "What is a 'triple-double' in basketball?",
+    "answers": ["At least 10 points, rebounds, and assists in one game", "Scoring 30+ points three games in a row", "Making three 3-pointers in a row", "Winning three consecutive championships"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "bk_en_007",
+    "text": "Who scored 100 points in a single NBA game in 1962?",
+    "answers": ["Wilt Chamberlain", "Michael Jordan", "Kareem Abdul-Jabbar", "LeBron James"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "bk_en_008",
+    "text": "Which country won the gold medal in men's basketball at the 2020 Tokyo Olympics?",
+    "answers": ["USA", "France", "Spain", "Australia"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "medium",
+    "language": "en"
+  },
+  {
+    "id": "bk_en_009",
+    "text": "Which team has won the most NBA championships?",
+    "answers": ["Boston Celtics", "Los Angeles Lakers", "Chicago Bulls", "Golden State Warriors"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "hard",
+    "language": "en"
+  },
+  {
+    "id": "bk_en_010",
+    "text": "In what year was basketball first included as an official Olympic sport?",
+    "answers": ["1936", "1904", "1948", "1928"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "hard",
+    "language": "en"
+  },
+  {
+    "id": "bk_ro_001",
+    "text": "Câți jucători are fiecare echipă pe teren în baschet?",
+    "answers": ["5", "6", "4", "7"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "bk_ro_002",
+    "text": "Cine a inventat baschetul?",
+    "answers": ["James Naismith", "Michael Jordan", "Larry Bird", "Wilt Chamberlain"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "bk_ro_003",
+    "text": "Cine era cunoscut sub porecla 'Black Mamba' în NBA?",
+    "answers": ["Kobe Bryant", "LeBron James", "Michael Jordan", "Shaquille O'Neal"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "bk_ro_004",
+    "text": "Câte secunde are o echipă la dispoziție pentru a arunca la coș în NBA?",
+    "answers": ["24 secunde", "30 secunde", "20 secunde", "35 secunde"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "easy",
+    "language": "ro"
+  },
+  {
+    "id": "bk_ro_005",
+    "text": "La ce înălțime se află coșul de baschet față de sol?",
+    "answers": ["3,05 metri (10 picioare)", "2,75 metri", "3,50 metri", "3,20 metri"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "bk_ro_006",
+    "text": "Ce este un 'triple-double' în baschet?",
+    "answers": ["Cel puțin 10 puncte, recuperări și pase decisive într-un meci", "Trei aruncări de 3 puncte consecutive", "30+ puncte în trei meciuri la rând", "Câștigarea a trei titluri consecutive"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "bk_ro_007",
+    "text": "Cine a marcat 100 de puncte într-un singur meci NBA în 1962?",
+    "answers": ["Wilt Chamberlain", "Michael Jordan", "Kareem Abdul-Jabbar", "LeBron James"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "bk_ro_008",
+    "text": "Care țară a câștigat medalia de aur la baschet masculin la Jocurile Olimpice de la Tokyo 2020?",
+    "answers": ["SUA", "Franța", "Spania", "Australia"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "medium",
+    "language": "ro"
+  },
+  {
+    "id": "bk_ro_009",
+    "text": "Care echipă deține cel mai mare număr de titluri NBA?",
+    "answers": ["Boston Celtics", "Los Angeles Lakers", "Chicago Bulls", "Golden State Warriors"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "hard",
+    "language": "ro"
+  },
+  {
+    "id": "bk_ro_010",
+    "text": "În ce an a fost introdus baschetul ca sport olimpic oficial?",
+    "answers": ["1936", "1904", "1948", "1928"],
+    "correctIndex": 0,
+    "topic": "basketball",
+    "difficulty": "hard",
+    "language": "ro"
+  }
+]

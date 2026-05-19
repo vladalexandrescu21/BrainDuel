@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrainDuel Admin</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== LOGIN SCREEN ==================== -->
+  <div id="login-screen" class="login-screen hidden">
+    <div class="login-card">
+      <div class="login-logo">
+        <span class="login-brain">🧠</span>
+        <h1 class="login-title">BrainDuel</h1>
+        <p class="login-subtitle">Admin Panel</p>
+      </div>
+      <form id="login-form" class="login-form">
+        <div class="form-group">
+          <label for="login-secret" class="form-label">Admin Secret</label>
+          <input
+            type="password"
+            id="login-secret"
+            class="form-input"
+            placeholder="Enter admin secret..."
+            autocomplete="current-password"
+          />
+        </div>
+        <div id="login-error" class="login-error hidden">Invalid admin secret. Please try again.</div>
+        <button type="submit" class="btn btn-primary btn-full" id="login-btn">
+          <span class="btn-text">Login</span>
+          <span class="spinner hidden" id="login-spinner"></span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== MAIN APP ==================== -->
+  <div id="app" class="app hidden">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle sidebar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+        <span class="topbar-brand">
+          <span class="brand-brain">🧠</span>
+          <span class="brand-name">BrainDuel Admin</span>
+        </span>
+      </div>
+      <div class="topbar-right">
+        <div class="server-status" id="server-status">
+          <span class="status-dot status-dot--live" id="status-dot"></span>
+          <span id="status-text">Connecting…</span>
+        </div>
+        <div class="uptime-badge" id="uptime-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span id="uptime-text">--</span>
+        </div>
+        <button class="btn btn-ghost btn-sm" id="logout-btn" title="Logout">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+            <polyline points="16 17 21 12 16 7"/>
+            <line x1="21" y1="12" x2="9" y2="12"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- SIDEBAR + CONTENT WRAPPER -->
+    <div class="layout">
+
+      <!-- SIDEBAR -->
+      <nav class="sidebar" id="sidebar">
+        <ul class="nav-list">
+          <li>
+            <button class="nav-item active" data-view="dashboard">
+              <span class="nav-icon">📊</span>
+              <span class="nav-label">Dashboard</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-item" data-view="questions">
+              <span class="nav-icon">❓</span>
+              <span class="nav-label">Questions</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-item" data-view="live-games">
+              <span class="nav-icon">🎮</span>
+              <span class="nav-label">Live Games</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-item" data-view="topics">
+              <span class="nav-icon">📚</span>
+              <span class="nav-label">Topics</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- MAIN CONTENT -->
+      <main class="main-content" id="main-content">
+
+        <!-- ====== DASHBOARD VIEW ====== -->
+        <section id="view-dashboard" class="view active">
+          <div class="view-header">
+            <h2 class="view-title">Dashboard</h2>
+            <p class="view-subtitle">Server overview and quick stats</p>
+          </div>
+
+          <!-- Stat Cards -->
+          <div class="stat-cards" id="stat-cards">
+            <div class="stat-card stat-card--purple">
+              <div class="stat-icon">🎮</div>
+              <div class="stat-info">
+                <div class="stat-value" id="stat-active-games">--</div>
+                <div class="stat-label">Active Games</div>
+              </div>
+            </div>
+            <div class="stat-card stat-card--cyan">
+              <div class="stat-icon">👥</div>
+              <div class="stat-info">
+                <div class="stat-value" id="stat-queue">--</div>
+                <div class="stat-label">Players in Queue</div>
+              </div>
+            </div>
+            <div class="stat-card stat-card--green">
+              <div class="stat-icon">❓</div>
+              <div class="stat-info">
+                <div class="stat-value" id="stat-total-questions">--</div>
+                <div class="stat-label">Total Questions</div>
+              </div>
+            </div>
+            <div class="stat-card stat-card--amber">
+              <div class="stat-icon">⏱️</div>
+              <div class="stat-info">
+                <div class="stat-value" id="stat-uptime">--</div>
+                <div class="stat-label">Server Uptime</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Questions by Topic -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Questions by Topic</h3>
+            </div>
+            <div class="card-body">
+              <div id="topic-table-container">
+                <div class="loading-state"><span class="spinner"></span> Loading…</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Activity -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Recent Activity</h3>
+            </div>
+            <div class="card-body">
+              <ul class="activity-list" id="activity-list">
+                <li class="loading-state"><span class="spinner"></span> Loading…</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== QUESTIONS VIEW ====== -->
+        <section id="view-questions" class="view">
+          <div class="view-header">
+            <h2 class="view-title">Questions</h2>
+            <p class="view-subtitle">Manage quiz question bank</p>
+          </div>
+
+          <!-- Filter Bar -->
+          <div class="filter-bar">
+            <div class="filter-bar-left">
+              <select class="form-select" id="filter-topic">
+                <option value="">All Topics</option>
+              </select>
+
+              <div class="toggle-group" id="filter-language">
+                <button class="toggle-btn active" data-value="">All</button>
+                <button class="toggle-btn" data-value="ro">RO</button>
+                <button class="toggle-btn" data-value="en">EN</button>
+              </div>
+
+              <div class="toggle-group" id="filter-difficulty">
+                <button class="toggle-btn active" data-value="">All</button>
+                <button class="toggle-btn" data-value="easy">Easy</button>
+                <button class="toggle-btn" data-value="medium">Medium</button>
+                <button class="toggle-btn" data-value="hard">Hard</button>
+              </div>
+
+              <div class="search-wrapper">
+                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="text" class="form-input search-input" id="filter-search" placeholder="Search questions…" />
+              </div>
+            </div>
+            <div class="filter-bar-right">
+              <button class="btn btn-primary" id="new-question-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+                New Question
+              </button>
+            </div>
+          </div>
+
+          <!-- Questions Table -->
+          <div class="card">
+            <div class="card-body card-body--no-pad">
+              <div id="questions-loading" class="loading-state"><span class="spinner"></span> Loading questions…</div>
+              <div id="questions-empty" class="empty-state hidden">
+                <div class="empty-icon">🔍</div>
+                <div class="empty-title">No questions found</div>
+                <div class="empty-sub">Try adjusting your filters or add a new question.</div>
+              </div>
+              <table class="data-table" id="questions-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Question</th>
+                    <th>Topic</th>
+                    <th>Lang</th>
+                    <th>Difficulty</th>
+                    <th>Correct Answer</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="questions-tbody"></tbody>
+              </table>
+            </div>
+            <div class="card-footer" id="questions-pagination">
+              <div class="pagination-info" id="pagination-info"></div>
+              <div class="pagination-controls">
+                <button class="btn btn-ghost btn-sm" id="prev-page" disabled>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"/>
+                  </svg>
+                  Previous
+                </button>
+                <button class="btn btn-ghost btn-sm" id="next-page" disabled>
+                  Next
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== LIVE GAMES VIEW ====== -->
+        <section id="view-live-games" class="view">
+          <div class="view-header">
+            <h2 class="view-title">Live Games</h2>
+            <p class="view-subtitle">Active game rooms — refreshing every 3 seconds</p>
+          </div>
+          <div id="live-games-container">
+            <div class="loading-state"><span class="spinner"></span> Loading…</div>
+          </div>
+        </section>
+
+        <!-- ====== TOPICS VIEW ====== -->
+        <section id="view-topics" class="view">
+          <div class="view-header">
+            <h2 class="view-title">Topics</h2>
+            <p class="view-subtitle">Question categories overview</p>
+          </div>
+          <div id="topics-grid" class="topics-grid">
+            <div class="loading-state"><span class="spinner"></span> Loading…</div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- ==================== QUESTION MODAL ==================== -->
+  <div id="question-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal" id="question-modal-inner">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">New Question</h3>
+        <button class="modal-close" id="modal-close" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-columns">
+          <!-- Form Column -->
+          <div class="modal-form-col">
+            <form id="question-form" novalidate>
+              <input type="hidden" id="edit-question-id" />
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Topic <span class="required">*</span></label>
+                  <select class="form-select" id="q-topic" required>
+                    <option value="">Select topic…</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Language</label>
+                  <div class="toggle-group" id="q-language">
+                    <button type="button" class="toggle-btn active" data-value="ro">RO</button>
+                    <button type="button" class="toggle-btn" data-value="en">EN</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Difficulty</label>
+                <div class="toggle-group" id="q-difficulty">
+                  <button type="button" class="toggle-btn active" data-value="easy">Easy</button>
+                  <button type="button" class="toggle-btn" data-value="medium">Medium</button>
+                  <button type="button" class="toggle-btn" data-value="hard">Hard</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="q-text">Question Text <span class="required">*</span></label>
+                <textarea
+                  id="q-text"
+                  class="form-input form-textarea"
+                  placeholder="Enter question text…"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="answers-grid">
+                <div class="form-group">
+                  <label class="form-label" for="q-a">
+                    <span class="answer-letter answer-letter--a">A</span> Answer A <span class="required">*</span>
+                  </label>
+                  <input type="text" id="q-a" class="form-input" placeholder="Answer A…" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="q-b">
+                    <span class="answer-letter answer-letter--b">B</span> Answer B <span class="required">*</span>
+                  </label>
+                  <input type="text" id="q-b" class="form-input" placeholder="Answer B…" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="q-c">
+                    <span class="answer-letter answer-letter--c">C</span> Answer C <span class="required">*</span>
+                  </label>
+                  <input type="text" id="q-c" class="form-input" placeholder="Answer C…" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="q-d">
+                    <span class="answer-letter answer-letter--d">D</span> Answer D <span class="required">*</span>
+                  </label>
+                  <input type="text" id="q-d" class="form-input" placeholder="Answer D…" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Correct Answer <span class="required">*</span></label>
+                <div class="correct-answer-group" id="correct-answer-group">
+                  <label class="correct-radio">
+                    <input type="radio" name="correct" value="0" /> <span class="answer-letter answer-letter--a">A</span>
+                  </label>
+                  <label class="correct-radio">
+                    <input type="radio" name="correct" value="1" /> <span class="answer-letter answer-letter--b">B</span>
+                  </label>
+                  <label class="correct-radio">
+                    <input type="radio" name="correct" value="2" /> <span class="answer-letter answer-letter--c">C</span>
+                  </label>
+                  <label class="correct-radio">
+                    <input type="radio" name="correct" value="3" /> <span class="answer-letter answer-letter--d">D</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Preview Column -->
+          <div class="modal-preview-col">
+            <div class="preview-label">Live Preview</div>
+            <div class="question-preview" id="question-preview">
+              <div class="preview-meta">
+                <span class="preview-badge" id="preview-topic-badge">Topic</span>
+                <span class="preview-badge preview-badge--lang" id="preview-lang-badge">RO</span>
+                <span class="preview-badge preview-badge--diff" id="preview-diff-badge">Easy</span>
+              </div>
+              <div class="preview-text" id="preview-text">Question text will appear here…</div>
+              <div class="preview-answers" id="preview-answers">
+                <div class="preview-answer" data-index="0">
+                  <span class="preview-answer-letter">A</span>
+                  <span class="preview-answer-text" id="preview-a">Answer A</span>
+                </div>
+                <div class="preview-answer" data-index="1">
+                  <span class="preview-answer-letter">B</span>
+                  <span class="preview-answer-text" id="preview-b">Answer B</span>
+                </div>
+                <div class="preview-answer" data-index="2">
+                  <span class="preview-answer-letter">C</span>
+                  <span class="preview-answer-text" id="preview-c">Answer C</span>
+                </div>
+                <div class="preview-answer" data-index="3">
+                  <span class="preview-answer-letter">D</span>
+                  <span class="preview-answer-text" id="preview-d">Answer D</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-ghost" id="modal-cancel">Cancel</button>
+        <button type="submit" form="question-form" class="btn btn-primary" id="modal-save">
+          <span class="btn-text">Save Question</span>
+          <span class="spinner hidden" id="save-spinner"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PREVIEW MODAL ==================== -->
+  <div id="preview-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="preview-modal-title">
+    <div class="modal modal--narrow">
+      <div class="modal-header">
+        <h3 class="modal-title" id="preview-modal-title">Question Preview</h3>
+        <button class="modal-close" id="preview-modal-close" aria-label="Close preview">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="preview-id" id="preview-modal-id"></div>
+        <div class="question-preview question-preview--standalone" id="preview-modal-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST CONTAINER ==================== -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

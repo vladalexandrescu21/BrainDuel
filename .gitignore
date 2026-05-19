@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.npm
+
+# Environment files — NEVER commit secrets
+.env
+.env.local
+.env.production
+
+# Firebase service account key (if downloaded as a file)
+*.json
+!server/src/data/questions.json
+!app/pubspec.yaml
+!app/pubspec.lock
+
+# Flutter
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/build/
+app/.packages
+
+# iOS
+app/ios/Pods/
+app/ios/.symlinks/
+app/ios/Flutter/Flutter.podspec
+app/ios/Flutter/Generated.xcconfig
+
+# Android
+app/android/.gradle/
+app/android/local.properties
+app/android/key.properties
+
+# macOS
+**/.DS_Store
+*.xcuserstate
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+*.iml

@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: brainduel-server
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SKIP_AUTH
+        value: "false"
+      - key: ADMIN_SECRET
+        generateValue: true
+      - key: FIREBASE_PROJECT_ID
+        sync: false
+      - key: FIREBASE_CLIENT_EMAIL
+        sync: false
+      - key: FIREBASE_PRIVATE_KEY
+        sync: false
