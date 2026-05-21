@@ -9,7 +9,11 @@ node_modules/
 
 # Firebase service account key (if downloaded as a file)
 *.json
+!server/package.json
+!server/package-lock.json
 !server/src/data/questions.json
+!firebase/firebase.json
+!firebase/firestore.indexes.json
 !app/pubspec.yaml
 !app/pubspec.lock
 
