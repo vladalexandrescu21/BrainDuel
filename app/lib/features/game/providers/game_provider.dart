@@ -44,6 +44,13 @@ class GameNotifier extends StateNotifier<GameState> {
       clearError: true,
     );
     _socket.connect(AppConstants.serverUrl);
+
+    // Wait until connected before emitting (max 5 seconds)
+    int waited = 0;
+    while (!_socket.isConnected && waited < 50) {
+      await Future.delayed(const Duration(milliseconds: 100));
+      waited++;
+    }
     _socket.joinQueue(topicId: topicId, userId: userId, token: token);
   }
 
