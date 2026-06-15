@@ -66,30 +66,23 @@ function removeFromQueue(socketId) {
 function findMatch() {
   if (queue.length < 2) return null;
 
-  // --- Pass 1: same-topic match ---
+  // Same-topic match only
   for (let i = 0; i < queue.length; i++) {
     for (let j = i + 1; j < queue.length; j++) {
       if (queue[i].topicId === queue[j].topicId) {
         const player1 = queue[i];
         const player2 = queue[j];
-        // Remove higher index first to preserve lower index validity
         queue.splice(j, 1);
         queue.splice(i, 1);
         console.log(
-          `[Queue] Same-topic match: ${player1.userId} vs ${player2.userId} (topic: ${player1.topicId})`
+          `[Queue] Match: ${player1.userId} vs ${player2.userId} (topic: ${player1.topicId})`
         );
         return { player1, player2 };
       }
     }
   }
 
-  // --- Pass 2: fallback — match first two players regardless of topic ---
-  const player1 = queue.shift();
-  const player2 = queue.shift();
-  console.log(
-    `[Queue] Cross-topic match: ${player1.userId} (${player1.topicId}) vs ${player2.userId} (${player2.topicId})`
-  );
-  return { player1, player2 };
+  return null; // No same-topic pair found yet
 }
 
 /**

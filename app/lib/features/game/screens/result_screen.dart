@@ -190,30 +190,34 @@ class _ScoreComparison extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.08),
+        color: Colors.white.withValues(alpha: 0.08),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: Colors.white.withOpacity(0.15)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.15)),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          _ScoreColumn(
-            name: playerName,
-            score: playerScore,
-            isHighlighted: playerScore >= opponentScore,
+          Expanded(
+            child: _ScoreColumn(
+              name: playerName,
+              score: playerScore,
+              isHighlighted: playerScore >= opponentScore,
+            ),
           ),
           Text(
             ':',
             style: GoogleFonts.exo2(
               fontSize: 36,
               fontWeight: FontWeight.bold,
-              color: Colors.white.withOpacity(0.4),
+              color: Colors.white.withValues(alpha: 0.4),
             ),
           ),
-          _ScoreColumn(
-            name: opponentName,
-            score: opponentScore,
-            isHighlighted: opponentScore > playerScore,
+          Expanded(
+            child: _ScoreColumn(
+              name: opponentName,
+              score: opponentScore,
+              isHighlighted: opponentScore > playerScore,
+            ),
           ),
         ],
       ),
@@ -241,7 +245,7 @@ class _ScoreColumn extends StatelessWidget {
           style: GoogleFonts.exo2(
             fontSize: 52,
             fontWeight: FontWeight.bold,
-            color: isHighlighted ? AppColors.gold : Colors.white.withOpacity(0.7),
+            color: isHighlighted ? AppColors.gold : Colors.white.withValues(alpha: 0.7),
           ),
         ),
         Text(
@@ -272,9 +276,9 @@ class _RewardBanner extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.07),
+        color: Colors.white.withValues(alpha: 0.07),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withOpacity(0.12)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -288,7 +292,7 @@ class _RewardBanner extends StatelessWidget {
           Container(
             width: 1,
             height: 40,
-            color: Colors.white.withOpacity(0.15),
+            color: Colors.white.withValues(alpha: 0.15),
           ),
           _RewardItem(
             icon: Icons.monetization_on,

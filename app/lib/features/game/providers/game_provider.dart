@@ -133,12 +133,15 @@ class GameNotifier extends StateNotifier<GameState> {
       return AbilityModel.fromType(abilityType);
     }).toList();
 
+    final timeLimitMs = dataMap['timeLimitMs'] as int? ?? 10000;
+    final isBonus = dataMap['isBonus'] as bool? ?? (dataMap['isLastRound'] as bool? ?? false);
+
     state = state.copyWith(
       status: GameStatus.playing,
       currentQuestion: question,
       currentRound: dataMap['round'] as int? ?? 1,
-      isBonus: dataMap['isBonus'] as bool? ?? false,
-      timeLimit: dataMap['timeLimit'] as int? ?? AppConstants.normalRoundTime,
+      isBonus: isBonus,
+      timeLimit: timeLimitMs ~/ 1000,
       availableAbilities: abilities,
       usedAbilities: [],
       eliminatedAnswers: [],
@@ -160,12 +163,16 @@ class GameNotifier extends StateNotifier<GameState> {
       question = QuestionModel.fromMap(Map<String, dynamic>.from(questionData));
     }
 
+    // Server sends timeLimitMs in milliseconds, convert to seconds
+    final timeLimitMs = dataMap['timeLimitMs'] as int? ?? 10000;
+    final isBonus = dataMap['isBonus'] as bool? ?? (dataMap['isLastRound'] as bool? ?? false);
+
     state = state.copyWith(
       status: GameStatus.playing,
       currentQuestion: question,
       currentRound: dataMap['round'] as int? ?? state.currentRound,
-      isBonus: dataMap['isBonus'] as bool? ?? false,
-      timeLimit: dataMap['timeLimit'] as int? ?? AppConstants.normalRoundTime,
+      isBonus: isBonus,
+      timeLimit: timeLimitMs ~/ 1000,
       eliminatedAnswers: [],
       clearPlayerAnswer: true,
       clearCorrectIndex: true,
@@ -236,11 +243,9 @@ class GameNotifier extends StateNotifier<GameState> {
     final dataMap = Map<String, dynamic>.from(data);
 
     final result = GameResult(
-      winnerId: dataMap['winnerId'] as String? ?? '',
-      playerFinalScore:
-          dataMap['playerFinalScore'] as int? ?? state.playerScore,
-      opponentFinalScore:
-          dataMap['opponentFinalScore'] as int? ?? state.opponentScore,
+      winnerId: dataMap['winnerId'] as String? ?? 'draw',
+      playerFinalScore: dataMap['playerFinalScore'] as int? ?? state.playerScore,
+      opponentFinalScore: dataMap['opponentFinalScore'] as int? ?? state.opponentScore,
       xpGained: dataMap['xpGained'] as int? ?? 0,
       coinsGained: dataMap['coinsGained'] as int? ?? 0,
     );

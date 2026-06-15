@@ -418,24 +418,27 @@ class GameRoom {
     const winnerSocketId = getWinner(this.scores);
     const isDraw = winnerSocketId === null;
 
+    // Map socketId winner to userId so client can compare with its own userId
+    const winnerUserId = isDraw
+      ? 'draw'
+      : this.players.find((p) => p.socketId === winnerSocketId)?.userId ?? 'draw';
+
     this.players.forEach((p) => {
       const opponent = this.getOpponent(p.socketId);
+      const myRewards = rewards[p.socketId] || { xp: 0, coins: 0 };
       this.io.to(p.socketId).emit(EVENTS.SERVER_TO_CLIENT.GAME_END, {
         roomId: this.roomId,
-        winner: isDraw ? null : winnerSocketId,
+        winnerId: winnerUserId,
         isDraw,
-        isWinner: !isDraw && winnerSocketId === p.socketId,
-        scores: {
-          [p.socketId]: this.scores[p.socketId],
-          [opponent.socketId]: this.scores[opponent.socketId],
-        },
-        rewards: rewards[p.socketId],
-        opponentRewards: rewards[opponent.socketId],
+        playerFinalScore: this.scores[p.socketId],
+        opponentFinalScore: this.scores[opponent.socketId],
+        xpGained: myRewards.xp,
+        coinsGained: myRewards.coins,
       });
     });
 
     console.log(
-      `[Room ${this.roomId}] Game over — ${isDraw ? 'DRAW' : `Winner: ${winnerSocketId}`} | ` +
+      `[Room ${this.roomId}] Game over — ${isDraw ? 'DRAW' : `Winner: ${winnerUserId}`} | ` +
         this.players.map((p) => `${p.userId}: ${this.scores[p.socketId]}`).join(' | ')
     );
 

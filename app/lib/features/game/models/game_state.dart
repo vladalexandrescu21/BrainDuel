@@ -25,7 +25,7 @@ class OpponentInfo {
 
   factory OpponentInfo.fromMap(Map<String, dynamic> map) {
     return OpponentInfo(
-      uid: map['uid'] as String? ?? '',
+      uid: map['userId'] as String? ?? map['uid'] as String? ?? '',
       displayName: map['displayName'] as String? ?? 'Opponent',
       level: map['level'] as int? ?? 1,
       avatarId: map['avatarId'] as String? ?? 'default',
