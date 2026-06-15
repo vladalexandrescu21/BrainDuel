@@ -104,23 +104,25 @@ class AuthNotifier extends StateNotifier<AuthState> {
   Future<void> signInWithEmail(String email, String password) async {
     state = state.copyWith(isLoading: true, clearError: true);
     try {
-      UserCredential userCredential;
-      try {
-        userCredential = await _firebaseAuth.signInWithEmailAndPassword(
-          email: email,
-          password: password,
-        );
-      } on FirebaseAuthException catch (e) {
-        if (e.code == 'user-not-found') {
-          userCredential = await _firebaseAuth.createUserWithEmailAndPassword(
-            email: email,
-            password: password,
-          );
-        } else {
-          rethrow;
-        }
-      }
+      final userCredential = await _firebaseAuth.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
       await _postSignIn(userCredential);
+    } catch (e) {
+      state = state.copyWith(isLoading: false, error: e.toString());
+    }
+  }
+
+  Future<void> registerWithEmail(String email, String password, String displayName) async {
+    state = state.copyWith(isLoading: true, clearError: true);
+    try {
+      final userCredential = await _firebaseAuth.createUserWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+      await userCredential.user?.updateDisplayName(displayName);
+      await _postSignIn(userCredential, overrideDisplayName: displayName);
     } catch (e) {
       state = state.copyWith(isLoading: false, error: e.toString());
     }

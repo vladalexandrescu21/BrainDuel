@@ -1,4 +1,5 @@
 // ignore_for_file: prefer_const_constructors
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -19,13 +20,16 @@ class LoginScreen extends ConsumerStatefulWidget {
 
 class _LoginScreenState extends ConsumerState<LoginScreen> {
   bool _showEmailForm = false;
+  bool _isRegisterMode = false;
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
+  final _nameController = TextEditingController();
 
   @override
   void dispose() {
     _emailController.dispose();
     _passwordController.dispose();
+    _nameController.dispose();
     super.dispose();
   }
 
@@ -44,7 +48,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                 const Spacer(flex: 2),
                 _buildLogo(),
                 const SizedBox(height: 48),
-                if (_showEmailForm) _buildEmailForm(authState) else _buildButtons(authState),
+                if (_showEmailForm)
+                  _buildEmailForm(authState)
+                else
+                  _buildButtons(authState),
                 if (authState.error != null) ...[
                   const SizedBox(height: 16),
                   _buildErrorBanner(authState.error!),
@@ -66,7 +73,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
             shape: BoxShape.circle,
             boxShadow: [
               BoxShadow(
-                color: AppColors.primary.withOpacity(0.5),
+                color: AppColors.primary.withValues(alpha: 0.5),
                 blurRadius: 28,
                 spreadRadius: 6,
               ),
@@ -109,14 +116,16 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   Widget _buildButtons(AuthState authState) {
     return Column(
       children: [
-        _GoogleSignInButton(
-          isLoading: authState.isLoading,
-          onPressed: () => ref.read(authProvider.notifier).signInWithGoogle(),
-        )
-            .animate()
-            .slideY(begin: 0.5, end: 0, duration: 500.ms, delay: 450.ms)
-            .fadeIn(duration: 500.ms, delay: 450.ms),
-        const SizedBox(height: 12),
+        if (!kIsWeb) ...[
+          _GoogleSignInButton(
+            isLoading: authState.isLoading,
+            onPressed: () => ref.read(authProvider.notifier).signInWithGoogle(),
+          )
+              .animate()
+              .slideY(begin: 0.5, end: 0, duration: 500.ms, delay: 450.ms)
+              .fadeIn(duration: 500.ms, delay: 450.ms),
+          const SizedBox(height: 12),
+        ],
         SizedBox(
           height: 56,
           width: double.infinity,
@@ -131,7 +140,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                 fontWeight: FontWeight.w600,
                 color: Colors.white,
                 decoration: TextDecoration.underline,
-                decorationColor: Colors.white.withOpacity(0.6),
+                decorationColor: Colors.white.withValues(alpha: 0.6),
               ),
             ),
           ),
@@ -146,67 +155,62 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   Widget _buildEmailForm(AuthState authState) {
     return Column(
       children: [
-        TextField(
-          controller: _emailController,
-          keyboardType: TextInputType.emailAddress,
-          style: const TextStyle(color: Colors.white),
-          decoration: InputDecoration(
-            labelText: S.email,
-            labelStyle: TextStyle(color: AppColors.textSecondary),
-            filled: true,
-            fillColor: AppColors.cardBg,
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: const BorderSide(color: AppColors.primary),
-            ),
+        if (_isRegisterMode) ...[
+          _buildTextField(
+            controller: _nameController,
+            label: S.displayName,
+            keyboardType: TextInputType.name,
           ),
+          const SizedBox(height: 12),
+        ],
+        _buildTextField(
+          controller: _emailController,
+          label: S.email,
+          keyboardType: TextInputType.emailAddress,
         ),
         const SizedBox(height: 12),
-        TextField(
+        _buildTextField(
           controller: _passwordController,
+          label: S.password,
           obscureText: true,
-          style: const TextStyle(color: Colors.white),
-          decoration: InputDecoration(
-            labelText: S.password,
-            labelStyle: TextStyle(color: AppColors.textSecondary),
-            filled: true,
-            fillColor: AppColors.cardBg,
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: const BorderSide(color: AppColors.primary),
-            ),
-          ),
         ),
         const SizedBox(height: 16),
         BrainButton(
-          label: S.login,
+          label: _isRegisterMode ? S.register : S.login,
           isLoading: authState.isLoading,
           onPressed: () {
-            ref.read(authProvider.notifier).signInWithEmail(
-                  _emailController.text.trim(),
-                  _passwordController.text,
-                );
+            if (_isRegisterMode) {
+              ref.read(authProvider.notifier).registerWithEmail(
+                    _emailController.text.trim(),
+                    _passwordController.text,
+                    _nameController.text.trim(),
+                  );
+            } else {
+              ref.read(authProvider.notifier).signInWithEmail(
+                    _emailController.text.trim(),
+                    _passwordController.text,
+                  );
+            }
           },
         ),
         const SizedBox(height: 12),
         TextButton(
-          onPressed: () => setState(() => _showEmailForm = false),
+          onPressed: authState.isLoading
+              ? null
+              : () => setState(() => _isRegisterMode = !_isRegisterMode),
+          child: Text(
+            _isRegisterMode ? S.alreadyHaveAccount : S.noAccount,
+            style: GoogleFonts.inter(
+              fontSize: 14,
+              color: AppColors.secondary,
+            ),
+          ),
+        ),
+        TextButton(
+          onPressed: () => setState(() {
+            _showEmailForm = false;
+            _isRegisterMode = false;
+          }),
           child: Text(
             S.cancel,
             style: TextStyle(color: AppColors.textSecondary),
@@ -216,13 +220,45 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     );
   }
 
+  Widget _buildTextField({
+    required TextEditingController controller,
+    required String label,
+    TextInputType keyboardType = TextInputType.text,
+    bool obscureText = false,
+  }) {
+    return TextField(
+      controller: controller,
+      keyboardType: keyboardType,
+      obscureText: obscureText,
+      style: const TextStyle(color: Colors.white),
+      decoration: InputDecoration(
+        labelText: label,
+        labelStyle: TextStyle(color: AppColors.textSecondary),
+        filled: true,
+        fillColor: AppColors.cardBg,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.2)),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.2)),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(color: AppColors.primary),
+        ),
+      ),
+    );
+  }
+
   Widget _buildErrorBanner(String error) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: BoxDecoration(
-        color: AppColors.wrong.withOpacity(0.15),
+        color: AppColors.wrong.withValues(alpha: 0.15),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppColors.wrong.withOpacity(0.4)),
+        border: Border.all(color: AppColors.wrong.withValues(alpha: 0.4)),
       ),
       child: Row(
         children: [
@@ -231,8 +267,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
           Expanded(
             child: Text(
               error,
-              style: GoogleFonts.inter(
-                  fontSize: 13, color: AppColors.wrong),
+              style: GoogleFonts.inter(fontSize: 13, color: AppColors.wrong),
             ),
           ),
         ],

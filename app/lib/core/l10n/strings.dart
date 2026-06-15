@@ -54,6 +54,10 @@ class S {
       isRomanian ? 'Deconectare' : 'Sign Out';
   static String get email => isRomanian ? 'Email' : 'Email';
   static String get password => isRomanian ? 'Parolă' : 'Password';
+  static String get displayName => isRomanian ? 'Nume afișat' : 'Display name';
+  static String get register => isRomanian ? 'Creează cont' : 'Create account';
+  static String get alreadyHaveAccount => isRomanian ? 'Ai deja cont? Autentifică-te' : 'Already have an account? Sign in';
+  static String get noAccount => isRomanian ? 'Nu ai cont? Creează unul' : 'No account? Create one';
   static String get tagline =>
       isRomanian ? 'Testează-ți creierul' : 'Test your brain';
   static String get pointsThisRound =>
