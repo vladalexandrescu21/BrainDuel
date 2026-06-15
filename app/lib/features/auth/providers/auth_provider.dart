@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
@@ -37,12 +38,12 @@ class AuthState {
 
 class AuthNotifier extends StateNotifier<AuthState> {
   final FirebaseAuth _firebaseAuth;
-  final GoogleSignIn _googleSignIn;
+  final GoogleSignIn? _googleSignIn;
   final FirestoreService _firestoreService;
 
   AuthNotifier({
     required FirebaseAuth firebaseAuth,
-    required GoogleSignIn googleSignIn,
+    required GoogleSignIn? googleSignIn,
     required FirestoreService firestoreService,
   })  : _firebaseAuth = firebaseAuth,
         _googleSignIn = googleSignIn,
@@ -83,7 +84,7 @@ class AuthNotifier extends StateNotifier<AuthState> {
   Future<void> signInWithGoogle() async {
     state = state.copyWith(isLoading: true, clearError: true);
     try {
-      final googleUser = await _googleSignIn.signIn();
+      final googleUser = await _googleSignIn?.signIn();
       if (googleUser == null) {
         state = state.copyWith(isLoading: false);
         return;
@@ -169,7 +170,7 @@ class AuthNotifier extends StateNotifier<AuthState> {
   Future<void> signOut() async {
     state = state.copyWith(isLoading: true);
     try {
-      await _googleSignIn.signOut();
+      await _googleSignIn?.signOut();
       await _firebaseAuth.signOut();
       state = AuthState(isLoading: false);
     } catch (e) {
@@ -189,7 +190,7 @@ class AuthNotifier extends StateNotifier<AuthState> {
 final authProvider = StateNotifierProvider<AuthNotifier, AuthState>((ref) {
   return AuthNotifier(
     firebaseAuth: FirebaseAuth.instance,
-    googleSignIn: GoogleSignIn(),
+    googleSignIn: kIsWeb ? null : GoogleSignIn(),
     firestoreService: FirestoreService(),
   );
 });

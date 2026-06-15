@@ -40,10 +40,10 @@ class DefaultFirebaseOptions {
     storageBucket: 'brainduel-7ee93.firebasestorage.app',
   );
 
-  // ─── Web (optional — future) ────────────────────────────────────────────────
+  // ─── Web ────────────────────────────────────────────────────────────────────
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'REPLACE_WEB_API_KEY',
-    appId: 'REPLACE_WEB_APP_ID',
+    apiKey: 'AIzaSyBNGX3KogjeSpxVeDkWk3pUnjsYa3cRTz8',
+    appId: '1:585042937225:web:4e7da18e5d7f1b55328d58',
     messagingSenderId: '585042937225',
     projectId: 'brainduel-7ee93',
     storageBucket: 'brainduel-7ee93.firebasestorage.app',
