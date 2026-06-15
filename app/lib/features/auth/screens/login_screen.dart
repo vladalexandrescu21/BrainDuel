@@ -21,6 +21,7 @@ class LoginScreen extends ConsumerStatefulWidget {
 class _LoginScreenState extends ConsumerState<LoginScreen> {
   bool _showEmailForm = false;
   bool _isRegisterMode = false;
+  bool _obscurePassword = true;
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _nameController = TextEditingController();
@@ -172,7 +173,15 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         _buildTextField(
           controller: _passwordController,
           label: S.password,
-          obscureText: true,
+          obscureText: _obscurePassword,
+          suffixIcon: IconButton(
+            icon: Icon(
+              _obscurePassword ? Icons.visibility_off : Icons.visibility,
+              color: AppColors.textSecondary,
+              size: 20,
+            ),
+            onPressed: () => setState(() => _obscurePassword = !_obscurePassword),
+          ),
         ),
         const SizedBox(height: 16),
         BrainButton(
@@ -225,6 +234,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     required String label,
     TextInputType keyboardType = TextInputType.text,
     bool obscureText = false,
+    Widget? suffixIcon,
   }) {
     return TextField(
       controller: controller,
@@ -236,6 +246,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         labelStyle: TextStyle(color: AppColors.textSecondary),
         filled: true,
         fillColor: AppColors.cardBg,
+        suffixIcon: suffixIcon,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
           borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.2)),
