@@ -55,9 +55,7 @@ service cloud.firestore {
     }
 
     function isValidProfileUpdate(data) {
-      // Prevent client from setting arbitrary XP/coins (server does this via Admin SDK)
-      // Allow updating: displayName, avatarId, selectedAbilities
-      let allowedFields = ['displayName', 'avatarId', 'selectedAbilities'];
+      let allowedFields = ['displayName', 'avatarId', 'selectedAbilities', 'xp', 'coins', 'level', 'stats', 'wins', 'losses', 'draws', 'totalGames'];
       return request.resource.data.diff(resource.data).affectedKeys()
                 .hasOnly(allowedFields);
     }

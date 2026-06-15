@@ -35,10 +35,12 @@ class FirestoreService {
         'coins': 100,
         'avatarId': 'default',
         'selectedAbilities': ['fiftyFifty', 'timeBoost'],
-        'wins': 0,
-        'losses': 0,
-        'draws': 0,
-        'totalGames': 0,
+        'stats': {
+          'wins': 0,
+          'losses': 0,
+          'draws': 0,
+          'totalGames': 0,
+        },
         'createdAt': FieldValue.serverTimestamp(),
       });
     } catch (e) {

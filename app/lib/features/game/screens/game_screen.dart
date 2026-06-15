@@ -144,22 +144,26 @@ class _GameScreenState extends ConsumerState<GameScreen>
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    PlayerHeader(
-                      displayName: profileState.displayName,
-                      avatarId: profileState.avatarId,
-                      score: gameState.playerScore,
-                      isPlayer: true,
+                    Expanded(
+                      child: PlayerHeader(
+                        displayName: profileState.displayName,
+                        avatarId: profileState.avatarId,
+                        score: gameState.playerScore,
+                        isPlayer: true,
+                      ),
                     ),
                     _RoundIndicator(
                       round: gameState.currentRound,
                       total: AppConstants.totalRounds,
                       isBonus: gameState.isBonus,
                     ),
-                    PlayerHeader(
-                      displayName: opponent?.displayName ?? 'Opponent',
-                      avatarId: opponent?.avatarId ?? 'default',
-                      score: gameState.opponentScore,
-                      isPlayer: false,
+                    Expanded(
+                      child: PlayerHeader(
+                        displayName: opponent?.displayName ?? 'Opponent',
+                        avatarId: opponent?.avatarId ?? 'default',
+                        score: gameState.opponentScore,
+                        isPlayer: false,
+                      ),
                     ),
                   ],
                 ),
