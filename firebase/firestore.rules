@@ -15,7 +15,7 @@ service cloud.firestore {
 
       allow update: if request.auth != null
                     && request.auth.uid == userId
-                    && isValidProfileUpdate(request.resource.data);
+                    && isValidProfileUpdate();
 
       allow delete: if false; // Never delete profiles
     }
@@ -54,7 +54,7 @@ service cloud.firestore {
           && data.stats.totalGames == 0;
     }
 
-    function isValidProfileUpdate(data) {
+    function isValidProfileUpdate() {
       let allowedFields = ['displayName', 'avatarId', 'selectedAbilities', 'xp', 'coins', 'level', 'stats', 'wins', 'losses', 'draws', 'totalGames'];
       return request.resource.data.diff(resource.data).affectedKeys()
                 .hasOnly(allowedFields);
